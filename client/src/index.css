@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  box-sizing: border-box;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* Style for the range input */
+input[type="range"] {
+  /* Full width */
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, #3498db, #e74c3c);
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  -webkit-appearance: none; /* Remove default styles on Webkit browsers */
+  appearance: none; /* Remove default styles on non-Webkit browsers */
+}
+
+/* Custom track style */
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 4px; /* Track height */
+  border-radius: 5px; /* Rounded corners */
+  background: linear-gradient(to right, #3498db, #e74c3c);
+}
+
+/* Custom thumb (slider handle) style */
+input[type="range"]::-webkit-slider-thumb {
+  width: 8px; /* Thumb width */
+  height: 8px; /* Thumb height */
+  background: #3498db; /* Thumb color */
+  border: 1px solid #fff; /* White border */
+  border-radius: 50%; /* Rounded shape */
+  -webkit-appearance: none; /* Remove default styles on Webkit browsers */
+  margin-top: -4px; /* Adjust vertical alignment */
+}
+
+/* For non-Webkit browsers (e.g., Firefox) */
+input[type="range"]::-moz-range-progress {
+  background-color: #3498db;
+}
+
+input[type="range"]::-moz-range-thumb {
+  background: #3498db;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+/* For non-Webkit browsers (e.g., Firefox) */
+input[type="range"]::-ms-fill-lower {
+  background-color: #3498db;
+}
+
+input[type="range"]::-ms-thumb {
+  background: #3498db;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
